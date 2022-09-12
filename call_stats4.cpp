@@ -1,9 +1,6 @@
 /*************************************************************************
-Name: St George Pennant   Z#: 23401887
-Course:
-Professor: Dr. Lofton Bullard
-Due Date: October 9, 2018   Due Time: 11:59
-Total Points: 20
+Name: St George Pennant  
+
 Assignment 6: call_stats4.cpp
 Description:
 Note: In this assignment you will
