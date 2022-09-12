@@ -1,10 +1,6 @@
 
 /****SAMPLE PROGRAM HEADER*******************************************************
 St George Pennant
-Due Date: February 17, 2020
-Course:  C0P3014
-Assignment:  Program 3
-Professor: Sorgente
 
 Description: This program calculates the order tax (orderTax), the net cost (netCost), and the total cost (totalCost) of an online order 
 by reading the data for the cell number, item number, location ID, price, and quantity from an input file and displays the results onto 
@@ -125,7 +121,7 @@ void ProcessData(orderRecord& p_record)
 	p_record.netCost = (p_record.quantity * p_record.price);
 	p_record.totalCost = (p_record.netCost + p_record.orderTax);
 	
-	/* • All double output should be presented with 2 or 4 
+	/* â€¢ All double output should be presented with 2 or 4 
 		decimal places(see sample output)*/
 }
 
@@ -134,22 +130,22 @@ void ProcessData(orderRecord& p_record)
 void GetTaxRate(double& taxRate, int locID)
 {
 	//use the location ID to set the tax rate
-	if (locID >= 500 && locID <= 530) //500 <= locationID <= 530– TAX rate is 4 % (.04)
+	if (locID >= 500 && locID <= 530) //500 <= locationID <= 530â€“ TAX rate is 4 % (.04)
 		taxRate = .04;
 
-	else if (531 <= locID && locID <= 560) //531 <= locationID <= 560 – TAX rate is 6 % (.06)
+	else if (531 <= locID && locID <= 560) //531 <= locationID <= 560 â€“ TAX rate is 6 % (.06)
 		taxRate = 0.06;
 
-	else if (561 <= locID && locID <= 580) //561 <= locationID <= 580– TAX rate is 6.6 % (.066)
+	else if (561 <= locID && locID <= 580) //561 <= locationID <= 580â€“ TAX rate is 6.6 % (.066)
 		taxRate = 0.066;
 
-	else if (581 <= locID && locID <= 600) //581 <= locationID <= 600– TAX rate is 7 % (.07)
+	else if (581 <= locID && locID <= 600) //581 <= locationID <= 600â€“ TAX rate is 7 % (.07)
 		taxRate = 0.07;
 
 	else if (locID > 600) //locationID > 600 - TAX rate is 8.25 % (.0825)
 		taxRate = 0.0825;
 	
-	else if (locID < 500)  //invalid location, < 500 – is not a valid entry for the locationID(less than 500 is not valid)
+	else if (locID < 500)  //invalid location, < 500 â€“ is not a valid entry for the locationID(less than 500 is not valid)
 		cout << "Invalid location" << endl << endl;
 }
 
